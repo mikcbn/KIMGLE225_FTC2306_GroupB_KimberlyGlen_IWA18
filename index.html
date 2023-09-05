@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kitchen Express</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="scripts.js" defer type="module"></script>
-    <script src="data.js" defer type="module"></script>
-    <script src="view.js" defer type="module"></script>
-  </head>
+    <link rel="stylesheet" href="/styles.css" />
+        <script src="/data.js" defer type="module"></script>
+    <script src="/view.js" defer type="module"></script>
 
-  <body>
+</head>
+
+<body>
     <header class="actions">
-      <h1 class="sr-only">Kitchen Express</h1>
-      <div class="actions__inner">
-        <button class="button button_primary" data-add>Add Order</button>
-      </div>
+        <h1 class="sr-only">Kitchen Express</h1>
+        <div class="actions__inner">
+            <button class="button button_primary" id="add-button">Add Order</button>
+        </div>
     </header>
 
     <dialog class="overlay" data-help-overlay>
@@ -106,7 +106,10 @@
       </section>
     </div>
 
-    <button class="help" data-help>?</button>
-    <div class="backdrop"></div>
+<button class="button button_primary" id="add-button" data-add>Add Order</button>
+<button class="help" id="help-button">?</button>
+
+
+    <script src="/scripts.js" defer type="module"></script>
   </body>
 </html>
